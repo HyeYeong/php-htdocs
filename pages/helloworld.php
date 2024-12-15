@@ -4,7 +4,9 @@
       $thisIsVariable = 'this is variable !';
       $thisIsNumber = 16;
       echo "Hello world. ".$thisIsVariable ." ";
-      echo var_dump($thisIsVariable)
+      echo var_dump($thisIsVariable);
+      echo gettype($thisIsNumber);
+      
     ?>
   </h1>
   <p>
@@ -12,6 +14,14 @@
       echo $thisIsVariable;
       echo var_dump($thisIsNumber);
       echo var_dump($thisIsNumber/5);
+      // is_int
+      if(is_int($thisIsNumber)) {
+        echo $thisIsNumber + 12;
+      }
+      // variables
+      $title = "subject";
+      $$title = "this is subject title";
+      echo $subject;
     ?>
   </p>
 </html>
