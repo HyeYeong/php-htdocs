@@ -24,4 +24,9 @@
       echo $subject;
     ?>
   </p>
+  <form method="post" action="confirm.php">
+    id: <input type="text" name="id"/>
+    password: <input type="password" name="password"/>
+    <input type="submit"/>
+  </form>
 </html>
